@@ -1,0 +1,21 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_tire {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tire {
+  width: 100%;
+  height: 30px;
+  border: 1px solid red;
+  color: brown;
+  background-color: bisque;
+}

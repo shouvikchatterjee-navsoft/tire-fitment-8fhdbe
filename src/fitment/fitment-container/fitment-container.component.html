@@ -1,0 +1,46 @@
+<button (click)="getYears()"> Select vehicle </button>
+
+<ng-container *ngIf="isYearDisplay">
+  <p>Select year:</p>
+  <div class="box">
+    <div *ngFor="let year of years">
+      <button (click)="onClickYear()">{{year}}</button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="isMakeDisplay">
+  <p>Select make:</p>
+  <div class="box">
+    <div *ngFor="let make of makes">
+      <button (click)="onClickMake()">{{make}}</button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="isModelDisplay">
+  <p>Select model:</p>
+  <div class="box">
+    <div *ngFor="let model of models">
+      <button (click)="onClickModel()">{{model}}</button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="isTrimDisplay">
+  <p>Select trim:</p>
+  <div class="box">
+    <div *ngFor="let trim of trims">
+      <button (click)="onClickTrim()">{{trim}}</button>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="isTireDisplay">
+<div class="box_tire">
+  <p>Available tires:</p>
+    <div *ngFor="let tire of tires">
+      <div class="tire">{{tire}}</div>
+    </div>
+  </div>
+  </ng-container>
